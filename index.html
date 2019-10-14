@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- TL: Ange det språk sidan är skriven på. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css"><!-- TL: Jag ändrade sökvägen för att kunna se din design. -->
     <title>Om-mig-Klaudia</title>
 
  
@@ -21,7 +21,7 @@
     <!--navigation bar-->
     <nav class="navigation">
 
-        <div class="logo"> Hello World! </div>
+        <div class="logo"> Hello World! </div><!-- TL: Hello world??? -->
         <div class="menu">
             <ul>
                 <li>
@@ -34,7 +34,7 @@
                     <a href="#">Spel</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a><!-- Jag kompletterade för att du ska se hur du skriver. Använd id och gör likadant för dina andra länkar. -->
                 </li>
                 <li>
                     <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">Kontakt (NTI)</a>
@@ -56,13 +56,13 @@
 
     <!-- om mig -->
 
-    <div class="om-mig">
+    <div class="om-mig"><!-- TL: Bra att du använder header och nav. Försök undvika div även i fortsättningen genom att använda dig av andra element från den här sidan https://www.w3schools.com/html/html5_semantic_elements.asp -->
         <h2>Om mig</h2>
         <div class="col-left">
             <img src="img/idk.jpg" alt="It's me!">
         </div>
         <div class="col-right">
-            <h4>Klaudia Ciosek</h4>
+            <h4>Klaudia Ciosek</h4><!-- TL: Jag hittar ingen h3. Använd h3 innan du använder h4. Ange med css ifall du vill att texten ska vara mindre. -->
             <p> Som man kunde se där uppe heter jag Klaudia och är en elev på NTI Gymnasiet Södertälje.
                 Anledningen till varför valde jag just den här skolan och inriktning (teknik) var att 
                 jag har haft en vän som gick här tidigare fast på IT-program. Han berättade om skolan och 
@@ -80,7 +80,7 @@
         <!--skills-->
 
     <div class="skills">
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <div class="skills-left">
             <i class='far fa-keyboard' style='font-size:36px'></i>
             <h4>Programmerare</h4>
@@ -92,7 +92,7 @@
         <div class="skills-center">
             <i class='fas fa-palette' style='font-size:36px'></i>
             <h4>Artist</h4>
-            <p>Jag kan rita/måla väldigt bra, brukar göra anteckningar 
+            <p>Jag kan rita/måla väldigt bra, brukar göra anteckningar <!-- TL: Jag tror att du menar teckningar? Anteckningar brukar vara text. -->
                 som beställningar och få betalt för det.
             </p>
 
@@ -104,7 +104,7 @@
             <p>Har gjort redan 3 sidor där jag fick betalt för det 
                 och som man ser på den här sidan jag kna ganska mycket
                 när det gäller CSS men är inte proffs än så några fel kan uppkomma.
-            </p>
+            </p><!-- TL: Du har rätt i att du kan ganska mycket. Vi ska dock jobba lite mer på praxis för hur man bör göra. -->
         </div>
 
     </div>
