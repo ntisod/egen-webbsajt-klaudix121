@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Om-mig-Klaudia</title>
+
+    <!--Har skrivit det finare i javascript sidan men här är det bara copy-paste från den, orkade inte göra allt om-->
+
+    <script>
+
+function dis(val){
+    document.getElementById("result").value+=val
+}
+
+function solve()
+{
+    let x = document.getElementById("result").value
+    let y = eval(x)
+    document.getElementById("result").value = y
+}
+
+
+function clr(){
+    document.getElementById("result").value = ""
+}
+
+    </script>    
+
+    <style>
+
+.title{
+            margin-bottom: 10px;
+            text-align: center;
+            width: 210px;
+            color: black;
+            border: solid grey 3px;
+            width: 100%
+        }
+
+        input[type="button"]
+        {
+            background-color: black;
+            color: white;
+            border: solid grey 3px;
+            width: 100%;
+        }
+
+        input[type="text"]{
+            background-color: white;
+            border: solid grey 3px;
+            width: 100%;
+        }
+    
+    </style>
+
+
+</head>
+
+
+<body>
+
+                 <!-----------------------------------------navigation bar--------------------------------------------------->
+    <nav class="navigation">
+
+        <div class="logo"> Hello World! </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#start">Start</a>
+                </li>
+                <li>
+                    <a href="#om-mig">Om mig</a>
+                </li>
+                <li>
+                    <a href="#spel">Spel</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">Kontakt (NTI)</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    
+             <!---------------------------------------------header------------------------------------------------------>
+
+    <header>
+        <div class="download-container">
+            <p>Klaudia Ciosek</p>
+            <h1 id="start">NTI Gymnasiet Södertälje</h1>
+            <a href="#" class="btn-ommig">Om mig</a>
+            <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank" class="btn-kontakt">Kontakta NTI</a>
+        </div>
+    </header>
+
+            <!---------------------------------------------- om mig ------------------------------------------------------>
+
+    <div class="om-mig">
+
+        <h2>Om mig</h2>
+
+        <div class="col-left">
+
+                <img src="img/idk.jpg" alt="It's me!">
+
+                </div>
+
+                <div class="col-right">
+
+                <h4 id="om-mig">Klaudia Ciosek</h4>
+                <p> Som man kunde se där uppe heter jag Klaudia och är en elev på NTI Gymnasiet Södertälje.
+                Anledningen till varför valde jag just den här skolan och inriktning (teknik) var att 
+                jag har haft en vän som gick här tidigare fast på IT-program. Han berättade om skolan och 
+                hur lärarna är. När jag fick ta reda på att det fanns teknik-program som jag var intresserad i 
+                så lag jag till NTI skolan som min första val direkt. 
+                </p>
+                <p>När det gäller tankar om framtiden så vill jag fortsätta med teknik och studera på KTH. 
+                Efter 3års studier vill jag börja jobba som data-grafiker/spel-programmerare,
+                (arbeta helst inom spel-område).
+                </p>
+
+                <a href="#spel">Se mina favoritspel!</a>
+
+        </div>
+
+    </div>
+
+             <!---------------------------------------------skills-------------------------------------------------->
+
+    <div class="skills">
+        <h2 id="skills">Skills</h2>
+        <div class="skills-left">
+            <i class='far fa-keyboard' style='font-size:36px'></i>
+            <h4>Programmerare</h4>
+            <p>Jag känner till 2 olika programmerings språk (python/C#) + 
+                har goda kunskaper när det gäller HTML och CSS.
+            </p>
+        </div>
+
+        <div class="skills-center">
+            <i class='fas fa-palette' style='font-size:36px'></i>
+            <h4>Artist</h4>
+            <p>Jag kan rita/måla väldigt bra, brukar göra teckningar 
+                som beställningar och få betalt för det.
+            </p>
+
+        </div>
+
+        <div class="skills-right">
+            <i class='fas fa-desktop' style='font-size:36px'></i>
+            <h4>Web-design</h4>
+            <p>Har gjort redan 3 sidor där jag fick betalt för det 
+                och som man ser på den här sidan jag kna ganska mycket
+                när det gäller CSS men är inte proffs än så några fel kan uppkomma.
+            </p>
+        </div>
+
+    </div>
+
+
+            <!---------------------------------------------- spel ----------------------------------------------------->
+
+    <div class="spel">
+        <h2 id="spel">Favoritspel</h2>
+        <div class="spel1">
+            <div class="overlay">
+                 <a href="https://square-enix-games.com/en_GB/games/thief/" target="blank_">Se hemsidan</a>
+            </div>
+
+        </div>
+
+        <div class="spel2">
+            <div class="overlay">
+                <a href="https://tombraider.square-enix-games.com/en-us" target="_blank">Se hemsidan</a>
+            </div>
+
+        </div>
+
+        <div class="spel3">
+            <div class="overlay">
+                <a href="https://rainbow6.ubisoft.com/siege/en-us/home/index.aspx" target="_blank">Se hemsidan</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class = title> Miniräknare</div>
+<table border="1">
+    <tr>
+        <td colspan="3"><input type="text" id="result"/></td>
+        <td><input type="button" value="c" onclick="clr()"/> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="dis('1')"/> </td>
+        <td><input type="button" value="2" onclick="dis('2')"/> </td>
+        <td><input type="button" value="3" onclick="dis('3')"/> </td>
+        <td><input type="button" value="/" onclick="dis('/')"/> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="dis('4')"/> </td>
+        <td><input type="button" value="5" onclick="dis('5')"/> </td>
+        <td><input type="button" value="6" onclick="dis('6')"/> </td>
+        <td><input type="button" value="-" onclick="dis('-')"/> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="dis('7')"/> </td>
+        <td><input type="button" value="8" onclick="dis('8')"/> </td>
+        <td><input type="button" value="9" onclick="dis('9')"/> </td>
+        <td><input type="button" value="+" onclick="dis('+')"/> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="." onclick="dis('.')"/> </td>
+        <td><input type="button" value="0" onclick="dis('0')"/> </td>
+        <td><input type="button" value="=" onclick="solve()"/> </td>
+        <td><input type="button" value="*" onclick="dis('*')"/> </td>
+    </tr>
+
+</table>
+
+
+
+
+
+</body>
+</html>
